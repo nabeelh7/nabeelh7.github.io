@@ -3,49 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nabeel's Portfolio</title>
+    <title>Nabeel Hussain Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header>
         <nav>
-            <h1>Nabeel Hussain</h1>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div class="menu-icon">&#9776;</div>
         </nav>
     </header>
 
-    <section id="home">
-        <h2>Hi, I'm Nabeel!</h2>
-        <p>A Financial Business Analyst & Data Enthusiast.</p>
+    <section id="home" class="hero">
+        <div class="name">
+            <h1 id="animated-name">NABEEL HUSSAIN</h1>
+            <p class="subtitle">Financial Business Analyst</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://github.com" target="_blank"><img src="images/github.svg" alt="GitHub"></a>
+            <a href="https://linkedin.com" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+            <a href="https://medium.com" target="_blank"><img src="images/medium.svg" alt="Medium"></a>
+        </div>
+        <a href="#about" class="learn-more">Learn More ↓</a>
     </section>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>I have over 6 years of experience in FP&A, financial forecasting, and business analysis...</p>
+        <p>I specialize in FP&A, financial forecasting, and business analysis...</p>
     </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Financial Forecasting Model</h3>
-            <p>Built a Python-based model to predict expenses and revenue...</p>
-        </div>
-        <div class="project">
-            <h3>Workforce Capacity Dashboard</h3>
-            <p>Created an interactive Power BI dashboard to monitor employee utilization...</p>
-        </div>
-    </section>
-
-    <footer>
-        <p>Made with ❤️ by Nabeel | © 2024</p>
-    </footer>
 
     <script src="script.js"></script>
 </body>

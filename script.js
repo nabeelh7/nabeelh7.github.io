@@ -1,10 +1,19 @@
-const greeting = document.querySelector('#home h2');
-const hours = new Date().getHours();
+// Animate each letter of the name
+const animatedName = document.getElementById('animated-name');
+const nameText = 'NABEEL HUSSAIN';
 
-if (hours < 12) {
-    greeting.textContent = "Good Morning! I'm Nabeel!";
-} else if (hours < 18) {
-    greeting.textContent = "Good Afternoon! I'm Nabeel!";
-} else {
-    greeting.textContent = "Good Evening! I'm Nabeel!";
+let index = 0;
+function typeEffect() {
+    if (index < nameText.length) {
+        animatedName.textContent += nameText.charAt(index);
+        index++;
+        setTimeout(typeEffect, 150);
+    }
 }
+typeEffect();
+
+// Smooth scroll to the "About" section
+const learnMoreButton = document.querySelector('.learn-more');
+learnMoreButton.addEventListener('click', () => {
+    document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+});
