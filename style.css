@@ -1,99 +1,172 @@
-/* General Styles */
+/* General Body Styling */
 body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    color: white;
-    background: #000;
+  font-family: 'Bahnschrift', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
 }
 
-a {
-    text-decoration: none;
-}
-
-/* Header Styles */
+/* Header Styling */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background: #000;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  display: flex; /* Use Flexbox for alignment */
+  justify-content: space-between; /* Space between header and navigation */
+  align-items: center; /* Vertically align items */
+  padding: 10px 30px; /* Add padding for spacing */
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  position: sticky; /* Stick to the top when scrolling */
+  top: 0;
+  z-index: 1000; /* Ensure it stays above other elements */
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
+/* Header Title Styling */
+header h1 {
+  margin-left: 40px; /* Add space from the left */
+  font-size: 1.8rem; /* Adjust font size */
+  font-weight: bold;
+  color: #fff; /* White color */
 }
 
+/* Navigation Menu */
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Display links horizontally */
+  gap: 20px; /* Add spacing between links */
+  margin-right: 70px; /* Add space from the right side */
+}
+
+nav ul li {
+  display: inline;
 }
 
 nav ul li a {
-    color: white;
-    font-size: 16px;
-    text-transform: uppercase;
-    padding: 5px 10px;
+  font-family: 'Bahnschrift', sans-serif;
+  color: #fff; /* White text */
+  font-size: 1.2rem;
+  position: relative;
 }
 
-nav ul li a.active, nav ul li a:hover {
-    color: #FFD700;
-    border-bottom: 2px solid #FFD700;
+nav ul li a:hover {
+  color: #ffc107; /* Gold color on hover */
 }
 
-/* Hero Section Styles */
-.hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0 40px;
-    background: #000;
+nav ul li a.active {
+  color: #ffc107; /* Gold for active link */
+  border-bottom: 2px solid #ffc107; /* Add underline for active link */
 }
 
-.greeting {
-    font-size: 18px;
-    color: #FFD700;
-    margin-bottom: 10px;
+/* Main Section Styling */
+main {
+  text-align: center;
+  margin-top: 50px;
 }
 
-.hero h1 {
-    font-size: 48px;
-    margin: 10px 0;
+/* Welcome Text Styling */
+main h2 {
+  font-size: 1.2rem; /* Size of "HELLO!" */
+  color: #ffc107; /* Gold color */
+  margin: 30px 0 10px; /* Space above: 30px, below: 10px */
 }
 
-.hero h1 span {
-    color: #FFD700;
-    font-weight: bold;
+/* "I'm Shaun Mia" Text */
+main h1 {
+  font-family: 'Cooper Black', sans-serif;
+  font-size: 2.5rem; /* Size of "I'm Shaun Mia" */
+  font-weight: bold;
+  margin: 40px 0; /* Space above and below */
 }
 
-.roles {
-    font-size: 24px;
-    margin: 20px 0;
-    color: #ccc;
+/* Animated Text Styling */
+main h3.animated-text {
+  font-family: 'Cooper Black', sans-serif;
+  font-size: 1.5rem; /* Size of animated text */
+  font-weight: bold;
+  margin: 20px 0 50px; /* Space below: 50px */
+  text-align: center; /* Center align the text */
+  position: relative; /* Ensure relative positioning */
+  height: 1.5em; /* Fixed height for animation */
+  overflow: hidden; /* Prevent text overflow */
+  margin: 0 auto; /* Center the text block */
 }
 
-.buttons {
-    display: flex;
-    gap: 15px;
+/* Additional Spacing for Buttons */
+main .button-container {
+  margin-top: 70px; /* Ensure space above buttons */
+  text-align: center; /* Center the buttons */
 }
 
-.buttons .btn {
-    padding: 10px 20px;
-    border: 2px solid #FFD700;
-    border-radius: 5px;
-    font-size: 16px;
-    color: #FFD700;
-    transition: all 0.3s ease;
+.animated-text span {
+  position: absolute;
+  width: 100%; /* Full width for alignment */
+  text-align: center; /* Center-align the text */
+  left: 0; /* Reset horizontal alignment */
+  opacity: 0; /* Hidden by default */
+  animation: lightSpeedInRightCycle 9s linear infinite; /* Custom animation loop */
 }
 
-.buttons .btn:hover {
-    background: #FFD700;
-    color: #000;
+/* Individual Animations with Delays */
+.animated-text span:nth-child(1) {
+  animation-delay: 0s;
+}
+.animated-text span:nth-child(2) {
+  animation-delay: 3s;
+}
+.animated-text span:nth-child(3) {
+  animation-delay: 6s;
+}
+
+/* Custom Keyframes Using Animate.css LightSpeedInRight */
+@keyframes lightSpeedInRightCycle {
+  0% {
+    opacity: 0;
+    transform: translateX(100%) skewX(-30deg);
+  }
+  10% {
+    opacity: 1;
+    transform: translateX(0%) skewX(0deg);
+  }
+  30% {
+    opacity: 1;
+    transform: translateX(0%) skewX(0deg);
+  }
+  40% {
+    opacity: 0;
+    transform: translateX(-100%) skewX(-30deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100%) skewX(-30deg);
+  }
+}
+
+/* Buttons Styling */
+main a {
+  font-family: 'Cooper Black', sans-serif;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-decoration: none;
+  border: 2px solid #fff; /* White border */
+  border-radius: 30px;
+  color: #fff; /* White text */
+  transition: all 0.3s ease;
+}
+
+main a:hover {
+  background-color: #ffc107; /* Gold background */
+  color: #000; /* Black text */
+  border-color: #ffc107; /* Gold border */
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 30px;
+  padding: 10px;
+  color: #fff;
 }
