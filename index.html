@@ -3,36 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nabeel Hussain Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
+    <!-- Header Section -->
     <header>
+        <div class="logo">Your Name</div>
         <nav>
-            <div class="menu-icon">&#9776;</div>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
+    <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="name">
-            <h1 id="animated-name">NABEEL HUSSAIN</h1>
-            <p class="subtitle">Financial Business Analyst</p>
+        <p class="greeting">HELLO!</p>
+        <h1>I'm <span>Your Name</span></h1>
+        <p class="roles">Data Analyst | AI Enthusiast</p>
+        <div class="buttons">
+            <a href="#" class="btn linkedin">LinkedIn</a>
+            <a href="#" class="btn github">GitHub</a>
+            <a href="#" class="btn resume">Resume</a>
         </div>
-        <div class="social-icons">
-            <a href="https://github.com" target="_blank"><img src="images/github.svg" alt="GitHub"></a>
-            <a href="https://linkedin.com" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a>
-            <a href="https://medium.com" target="_blank"><img src="images/medium.svg" alt="Medium"></a>
-        </div>
-        <a href="#about" class="learn-more">Learn More ↓</a>
     </section>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I specialize in FP&A, financial forecasting, and business analysis...</p>
-    </section>
-
-    <script src="script.js"></script>
 </body>
 </html>
