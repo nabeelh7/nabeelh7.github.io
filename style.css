@@ -5,6 +5,7 @@ body {
   padding: 0;
   background-color: #000; /* Black background */
   color: #fff; /* White text */
+  scroll-behavior: smooth; /* Enable smooth scrolling */
 }
 
 /* Header Styling */
@@ -12,7 +13,7 @@ header {
   display: flex; /* Use Flexbox for alignment */
   justify-content: space-between; /* Space between header and navigation */
   align-items: center; /* Vertically align items */
-  padding: 10px 30px; /* Add padding for spacing */
+  padding: 5px 30px; /* Add padding for spacing */
   background-color: #000; /* Black background */
   color: #fff; /* White text */
   position: sticky; /* Stick to the top when scrolling */
@@ -23,7 +24,7 @@ header {
 /* Header Title Styling */
 header h1 {
   margin-left: 40px; /* Add space from the left */
-  font-size: 1.8rem; /* Adjust font size */
+  font-size: 1.2rem; /* Adjust font size */
   font-weight: bold;
   color: #fff; /* White color */
 }
@@ -34,7 +35,7 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex; /* Display links horizontally */
-  gap: 20px; /* Add spacing between links */
+  gap: 40px; /* Add spacing between links */
   margin-right: 70px; /* Add space from the right side */
 }
 
@@ -45,38 +46,46 @@ nav ul li {
 nav ul li a {
   font-family: 'Bahnschrift', sans-serif;
   color: #fff; /* White text */
-  font-size: 1.2rem;
+  font-size: 1rem;
   position: relative;
+  text-decoration: none; /* Remove underline */
+  padding: 5px 0; /* Add padding for spacing */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
 }
 
 nav ul li a:hover {
-  color: #00fbff; /* Gold color on hover */
+  color: #00fbff; /* Highlight color on hover */
+  border-bottom: 2px solid #00fbff; /* Add a bottom border for hover */
 }
 
 nav ul li a.active {
-  color: #00fbff; /* Gold for active link */
-  border-bottom: 2px solid #00fbff; /* Add underline for active link */
+  color: #00fbff; /* Highlight color for active link */
+  border-bottom: 2px solid #00fbff; /* Add bottom border for active link */
 }
 
 /* Main Section Styling */
 main {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 /* Welcome Text Styling */
 main h2 {
   font-size: 1.2rem; /* Size of "HELLO!" */
-  color: #00fbff; /* Gold color */
-  margin: 30px 0 10px; /* Space above: 30px, below: 10px */
+  color: #00fbff; /* Highlight color */
+  margin: 20px 0 10px; /* Space above: 30px, below: 10px */
 }
 
-/* "I'm Shaun Mia" Text */
 main h1 {
   font-family: 'Cooper Black', sans-serif;
-  font-size: 3.5rem; /* Size of "I'm Shaun Mia" */
+  font-size: 3.5rem; /* Size of "I'm Nabeel Hussain" */
   font-weight: bold;
   margin: 40px 0; /* Space above and below */
+}
+
+main h1 .highlight {
+  color: #00fbff; /* Highlight color */
+  font-weight: bold; /* Make it bold */
 }
 
 /* Animated Text Styling */
@@ -84,21 +93,15 @@ main h3.animated-text {
   font-family: 'Cooper Black', sans-serif;
   font-size: 1.5rem; /* Size of animated text */
   font-weight: bold;
-  margin: 0px 0 50px; /* Space below: 50px */
-  text-align: center; /* Center align the text */
+  margin: 20px 0 50px; /* Add space above and below */
   position: relative; /* Ensure relative positioning */
   height: 1.5em; /* Fixed height for animation */
   overflow: hidden; /* Prevent text overflow */
-  margin: 0 auto; /* Center the text block */
+  text-align: center; /* Center align the text */
 }
 
-/* Additional Spacing for Buttons */
-main .button-container {
-  margin-top: 70px; /* Ensure space above buttons */
-  text-align: center; /* Center the buttons */
-}
-
-.animated-text span {
+/* Animation for Text */
+main h3.animated-text span {
   position: absolute;
   width: 100%; /* Full width for alignment */
   text-align: center; /* Center-align the text */
@@ -108,13 +111,13 @@ main .button-container {
 }
 
 /* Individual Animations with Delays */
-.animated-text span:nth-child(1) {
+main h3.animated-text span:nth-child(1) {
   animation-delay: 0s;
 }
-.animated-text span:nth-child(2) {
+main h3.animated-text span:nth-child(2) {
   animation-delay: 3s;
 }
-.animated-text span:nth-child(3) {
+main h3.animated-text span:nth-child(3) {
   animation-delay: 6s;
 }
 
@@ -143,23 +146,87 @@ main .button-container {
 }
 
 /* Buttons Styling */
-main a {
-  font-family: 'Cooper Black', sans-serif;
+main .button-container {
+  margin-top: 50px; /* Adjust button position above Learn More */
+  margin-bottom: 50px; /* Add space below buttons */
+  text-align: center; /* Center-align the buttons */
+}
+
+main .button-container a {
   display: inline-block;
-  margin: 10px;
-  padding: 10px 20px;
+  margin: 0 20px; /* Add more horizontal spacing between buttons */
+  padding: 10px 25px; /* Adjust button padding */
   font-size: 1rem;
-  text-decoration: none;
+  text-decoration: none; /* Remove underline */
   border: 2px solid #fff; /* White border */
   border-radius: 30px;
   color: #fff; /* White text */
-  transition: all 0.3s ease;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  font-family: 'Cooper Black', sans-serif;
 }
 
-main a:hover {
-  background-color: #00fbff; /* Gold background */
+main .button-container a:hover {
+  background-color: #00fbff; /* Highlight background */
   color: #000; /* Black text */
-  border-color: #00fbff; /* Gold border */
+  border-color: #00fbff; /* Highlight border */
+}
+
+/* Learn More Section */
+.learn-more {
+  text-align: center;
+  margin-top: 20px; /* Adjust spacing above the Learn More section */
+}
+
+.learn-more p {
+  font-size: 1rem;
+  font-family: 'Bahnschrift', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px; /* Adjust spacing between text and arrow */
+}
+
+.learn-more .arrow-down {
+  font-size: 1rem; /* Larger arrow size */
+  color: #fff; /* White arrow */
+  animation: bounce 2s infinite; /* Add bounce animation */
+  display: inline-block;
+  text-decoration: none; /* Remove underline */
+}
+
+.learn-more .arrow-down:hover {
+  color: #00fbff; /* Highlight color on hover */
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Section Styling */
+section {
+  padding: 50px 20px; /* Add spacing inside the sections */
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #00fbff; /* Highlight color */
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin: 0 auto;
+  max-width: 800px; /* Restrict text width */
 }
 
 /* Footer Styling */

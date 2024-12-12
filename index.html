@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nabeel Hussain</title>
+    <title>Nabeel Hussain Portfolio</title>
     <link rel="stylesheet" href="style.css"> <!-- Your custom CSS -->
     <link
         rel="stylesheet"
@@ -16,30 +16,67 @@
         <h1>Nabeel Hussain</h1>
         <nav>
             <ul>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Main Section -->
-    <main>
-        <h2 class="animate__animated animate__zoomInDown">HELLO!</h2>
-        <h1 class="animate__animated animate__zoomInDown">I'm Nabeel Hussain</h1>
-        <h3 class="animated-text">
-            <span class="animate__animated animate__lightSpeedInRight">"Data Analyst"</span>
-            <span class="animate__animated animate__lightSpeedInRight">"AI Enthusiast"</span>
-            <span class="animate__animated animate__lightSpeedInRight">"BI Developer"   </span>
-        </h3>
-         <!-- Button Container -->
-    <div class="button-container">
-            <a href="#" class="animate__animated animate__zoomInDown animate__delay-1s">LinkedIn</a>
-            <a href="#" class="animate__animated animate__zoomInDown animate__delay-1s">GitHub</a>
-            <a href="#" class="animate__animated animate__zoomInDown animate__delay-1s">Resume</a>
-        </div>
-    </main>
+    <section id="home">
+        <main>
+            <h2 class="animate__animated animate__zoomInDown">HELLO!</h2>
+            <h1 class="animate__animated animate__zoomInDown">
+                I'm <span class="highlight">Nabeel Hussain</span>
+            </h1>
+            <h3 class="animated-text">
+                <span class="animate__animated animate__lightSpeedInRight">"Data Analyst"</span>
+                <span class="animate__animated animate__lightSpeedInRight">"AI Enthusiast"</span>
+                <span class="animate__animated animate__lightSpeedInRight">"BI Developer"</span>
+            </h3>
+
+            <!-- Button Container -->
+            <div class="button-container">
+                <a href="https://www.linkedin.com" class="animate__animated animate__zoomInDown animate__delay-1s">LinkedIn</a>
+                <a href="https://github.com" class="animate__animated animate__zoomInDown animate__delay-1s">GitHub</a>
+                <a href="resume.pdf" class="animate__animated animate__zoomInDown animate__delay-1s">Resume</a>
+            </div>
+
+            <!-- Learn More Section -->
+            <div class="learn-more">
+                <p>LEARN MORE</p>
+                <a href="#about" class="arrow-down">&#x2193;</a> <!-- Down arrow -->
+            </div>
+        </main>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>This is where you describe yourself. Add information about your background, skills, and interests.</p>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>Include your professional experience, education, and skills here.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Highlight some of your key projects. This can be a teaser for the detailed project page.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Provide your contact details or a form for users to reach you.</p>
+    </section>
+    
+    <script src="script.js"></script>
 </body>
 </html>
