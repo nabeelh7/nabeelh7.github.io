@@ -111,7 +111,7 @@
     animation: lightSpeedInRightCycle 12s linear infinite; /* Custom animation loop */
   }
 
-  /* Individual Animations with Delays */
+  /* Individual Animations with Delays *//* Individual Animations with Delays */
   main h3.animated-text span:nth-child(1) {
     animation-delay: 0s;
 }
