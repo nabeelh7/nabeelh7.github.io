@@ -1,0 +1,73 @@
+SKill SET <STYLE>
+
+    /* General Section Styling */
+#skills {
+    padding: 40px 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #000; /* Match the theme */
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #00fbff;
+    margin-bottom: 20px;
+}
+
+/* Skills Container */
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Category Styling */
+.skills-category {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+}
+
+.skills-category h3 {
+    font-size: 1.5rem;
+    color: #00fbff;
+    margin-bottom: 10px;
+}
+
+/* Icons Row */
+.skills-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.skills-row img {
+    width: 48px;
+    height: 48px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover Effects */
+.skills-row img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .skills-container {
+        gap: 10px;
+    }
+    .skills-category h3 {
+        font-size: 1.2rem;
+    }
+    .skills-row img {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+</STYLE>
