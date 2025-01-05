@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau - Sales Performance and Customer Trends Analysis</title>
+    <link rel="stylesheet" href="../style.css"> <!-- Reuse your existing theme -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #00fbff;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #00fbff;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #00fbff;
+        }
+
+        p, ul {
+            margin-bottom: 15px;
+            text-align: justify;
+            color: #fff;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+
+        .visualization-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 30px 0;
+        }
+
+        .tableauPlaceholder {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .tableauViz {
+            margin: 0 auto;
+        }
+
+        .content {
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid #00fbff;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+     <!-- Header -->
+     <header>
+        <h1>Nabeel Hussain</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../skills.html">Skills</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Tableau - Sales Performance and Customer Trends Analysis</h1>
+
+    <div class="visualization-container">
+        <!-- Embedded Tableau Visualization -->
+        <div class='tableauPlaceholder' id='viz1736009810554' style='position: relative'>
+            <noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;D3&#47;D3PBN9DRN&#47;1_rss.png' style='border: none' /></a></noscript>
+            <object class='tableauViz'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                <param name='embed_code_version' value='3' /> 
+                <param name='path' value='shared&#47;D3PBN9DRN' /> 
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;D3&#47;D3PBN9DRN&#47;1.png' /> 
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+                <param name='filter' value='publish=yes' />
+            </object>
+        </div>
+        <script type='text/javascript'>                    
+            var divElement = document.getElementById('viz1736009810554');
+            var vizElement = divElement.getElementsByTagName('object')[0];                    
+            if ( divElement.offsetWidth > 800 ) { 
+                vizElement.style.width='1200px';
+                vizElement.style.height='827px';
+            } else if ( divElement.offsetWidth > 500 ) { 
+                vizElement.style.width='1200px';
+                vizElement.style.height='827px';
+            } else { 
+                vizElement.style.width='100%';
+                vizElement.style.height='2927px';
+            }                     
+            var scriptElement = document.createElement('script');                    
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+        </script>
+    </div>
+
+    <div class="content">
+        <h2>Introduction</h2>
+        <p>This project focuses on creating two dynamic dashboards in Tableau aimed at empowering stakeholders, including sales managers and executives, to analyze sales performance and customer trends.</p>
+
+        <h2>Sales Dashboard</h2>
+        <h3>Dashboard Purpose</h3>
+        <p>The Sales Dashboard provides an overview of sales metrics and trends to help analyze year-over-year sales performance and understand key sales trends.</p>
+
+        <h3>Key Requirements</h3>
+        <ul>
+            <li><strong>KPI Overview:</strong> Display total sales, profits, and quantity for the current and previous years.</li>
+            <li><strong>Sales Trends:</strong>
+                <ul>
+                    <li>Present monthly KPI data for the current and previous years.</li>
+                    <li>Highlight months with the highest and lowest sales.</li>
+                </ul>
+            </li>
+            <li><strong>Product Subcategory Comparison:</strong> Compare sales and profit performance by product subcategories for the current and previous years.</li>
+            <li><strong>Weekly Trends for Sales & Profit:</strong>
+                <ul>
+                    <li>Show weekly sales and profit data for the current year.</li>
+                    <li>Highlight weeks above and below the average weekly values.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Customer Dashboard</h2>
+        <h3>Dashboard Purpose</h3>
+        <p>The Customer Dashboard provides insights into customer data, trends, and behaviors, helping the marketing team and management improve customer satisfaction.</p>
+
+        <h3>Key Requirements</h3>
+        <ul>
+            <li><strong>KPI Overview:</strong> Display total customers, total sales per customer, and the total number of orders for the current and previous years.</li>
+            <li><strong>Customer Trends:</strong>
+                <ul>
+                    <li>Show monthly trends for each KPI for the current and previous years.</li>
+                    <li>Highlight months with the highest and lowest sales.</li>
+                </ul>
+            </li>
+            <li><strong>Customer Distribution by Number of Orders:</strong> Visualize the distribution of customers based on order count to assess loyalty and engagement.</li>
+            <li><strong>Top 10 Customers by Profit:</strong>
+                <ul>
+                    <li>Showcase the top 10 customers by profit with additional details like rank, number of orders, current sales and profit, and the last order date.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Design & Interactivity Requirements</h2>
+        <ul>
+            <li><strong>Dynamic Dashboards:</strong>
+                <ul>
+                    <li>Enable users to explore historical data by selecting any year.</li>
+                    <li>Allow seamless navigation between dashboards.</li>
+                </ul>
+            </li>
+            <li><strong>Interactive Charts:</strong> Enable filtering directly through charts and graphs.</li>
+            <li><strong>Data Filters:</strong> Provide filters for product categories, subcategories, and geographic details like region, state, and city.</li>
+        </ul>
+
+        <h2>Implementation Overview</h2>
+        <p>The dashboards were designed using Tableau, following a structured approach:</p>
+        <ul>
+            <li><strong>Analyzing Requirements:</strong> Collecting requirements, choosing the right charts, and planning color schemes and mockups.</li>
+            <li><strong>Building the Data Source:</strong> Connecting data, creating models, and ensuring data quality.</li>
+            <li><strong>Building Charts and Dashboards:</strong> Creating calculated fields, applying formatting, and designing an interactive layout.</li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Nabeel Hussain. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+

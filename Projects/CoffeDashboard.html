@@ -4,59 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Dashboard Analysis</title>
-    <link rel="stylesheet" href="../style.css"> <!-- Link to your CSS -->
+    <link rel="stylesheet" href="../style.css"> <!-- Reuse your existing theme -->
     <style>
         body {
             font-family: Arial, sans-serif;
-            color: #fff;
-            background-color: #000;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
+            background-color: #000;
+            color: #fff;
         }
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
+
         h1 {
-            color: #00fbff;
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        h2 {
-            color: #00fbff;
-            text-align: left;
-            margin-bottom: 20px;
             font-size: 2rem;
-            margin-left: 20px;
-        }
-        .content {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .content p {
-            font-size: 1rem;
-            line-height: 1.8;
-            text-align: left;
-            margin-left: 20px;
-        }
-        .content ul {
-            margin: 20px 0;
-            padding-left: 40px;
-        }
-        .content ul li {
-            margin-bottom: 10px;
-        }
-        footer {
+            margin-bottom: 20px;
             text-align: center;
-            margin-top: 40px;
-            font-size: 0.9rem;
-            color: #aaa;
+            color: #00fbff;
         }
-        .dashboard-container iframe {
-            width: 100%;
-            height: 600px;
-            border: none;
+
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #00fbff;
+        }
+
+        p, ul {
+            margin-bottom: 15px;
+            text-align: justify;
+            color: #fff;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+
+        .visualization-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 30px 0;
+        }
+
+        .content {
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid #00fbff;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -75,9 +69,21 @@
         </nav>
     </header>
 
-    <!-- Coffee Dashboard Section -->
-    <section class="content">
-        <h2>Coffee Dashboard Analysis</h2>
+    <!-- Main Title -->
+    <h1>Coffee Dashboard Analysis</h1>
+
+    <!-- Visualization Section -->
+    <div class="visualization-container">
+        <iframe 
+        src="https://onedrive.live.com/embed?resid=DF141289C78CC9D9%21107&authkey=%21ANQRciGJNPlFZFQ&em=2&AllowTyping=True&wdHideHeaders=True&wdInConfigurator=True&wdInConfigurator=True"
+            frameborder="0"
+            style="width: 100%; height: 600px;">
+        </iframe>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+        <h2>Introduction</h2>
         <p>This project showcases a comprehensive analysis of coffee sales trends using advanced Excel functionalities. The visualizations and features include:</p>
         <ul>
             <li><strong>Interactive Timeline:</strong> Filter sales data by specific time periods with dynamic slicers.</li>
@@ -94,13 +100,7 @@
             <li>Customization and formatting to create an engaging and user-friendly dashboard interface.</li>
         </ul>
         <p>This dashboard not only provides insights into coffee sales performance but also demonstrates my ability to turn raw data into meaningful and actionable visualizations.</p>
-        <div class="dashboard-container">
-            <iframe 
-                src="https://univarkansaslittlerock-my.sharepoint.com/personal/mnabeelhuss_ualr_edu/_layouts/15/Doc.aspx?sourcedoc={3ba8492e-0151-4991-88e0-ff0b53026127}&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True" 
-                frameborder="0">
-            </iframe>
-        </div>
-    </section>
+    </div>
 
     <!-- Footer -->
     <footer>
