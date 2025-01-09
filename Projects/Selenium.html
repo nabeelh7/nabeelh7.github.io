@@ -3,60 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Dashboard Analysis</title>
-    <link rel="stylesheet" href="../style.css"> <!-- Link to your CSS -->
+    <title>Automated Stock Scanner</title>
+    <link rel="stylesheet" href="../style.css"> <!-- Reuse your existing theme -->
     <style>
         body {
             font-family: Arial, sans-serif;
-            color: #fff;
-            background-color: #000;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
+            background-color: #000;
+            color: #fff;
         }
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
+
         h1 {
-            color: #00fbff;
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        h2 {
-            color: #00fbff;
-            text-align: left;
-            margin-bottom: 20px;
             font-size: 2rem;
-            margin-left: 20px;
-        }
-        .content {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .content p {
-            font-size: 1rem;
-            line-height: 1.8;
-            text-align: left;
-            margin-left: 20px;
-        }
-        .content ul {
-            margin: 20px 0;
-            padding-left: 40px;
-        }
-        .content ul li {
-            margin-bottom: 10px;
-        }
-        footer {
+            margin-bottom: 20px;
             text-align: center;
-            margin-top: 40px;
-            font-size: 0.9rem;
-            color: #aaa;
+            color: #00fbff;
         }
-        .dashboard-container iframe {
-            width: 100%;
-            height: 600px;
-            border: none;
+
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #00fbff;
+        }
+
+        p, ul {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+
+        .gif-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 40px auto; /* Center and add vertical spacing */
+            padding: 20px; /* Add space inside the container */
+            max-width: 1200px; /* Limit the width */
+            border: 2px solid #00fbff; /* Optional border for styling */
+            border-radius: 10px;
+            background-color: #111; /* Slightly different background for contrast */
+        }
+
+        .gif-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .github-link {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .github-link a {
+            text-decoration: none;
+            color: #00fbff;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .visualization-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 30px 0;
+        }
+
+        .login-warning {
+            text-align: center;
+            color: red;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid #00fbff;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -67,44 +97,53 @@
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="../about.html">About</a></li>
-                <li><a href="../skills.html">Skills</a></li>
                 <li><a href="../projects.html">Projects</a></li>
                 <li><a href="../contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Coffee Dashboard Section -->
-    <section class="content">
-        <h2>Coffee Dashboard Analysis</h2>
-        <p>This project showcases a comprehensive analysis of coffee sales trends using advanced Excel functionalities. The visualizations and features include:</p>
-        <ul>
-            <li><strong>Interactive Timeline:</strong> Filter sales data by specific time periods with dynamic slicers.</li>
-            <li><strong>Total Sales Over Time:</strong> A line graph that compares sales trends across coffee types, including Arabica, Robusta, Excelsa, and Liberica.</li>
-            <li><strong>Sales by Country:</strong> A bar chart highlighting revenue contributions from different regions, including the United States, Ireland, and the United Kingdom.</li>
-            <li><strong>Top 5 Customers:</strong> A ranked chart displaying the highest-spending customers.</li>
-        </ul>
-        <p>In this project, I utilized the following skills:</p>
-        <ul>
-            <li>Advanced Excel formulas, such as XLOOKUP and INDEX-MATCH, to extract and organize data efficiently.</li>
-            <li>Sorting and filtering techniques to enable dynamic data exploration.</li>
-            <li>Graph creation to visualize trends and patterns effectively.</li>
-            <li>PivotTables for summarizing large datasets and deriving actionable insights.</li>
-            <li>Customization and formatting to create an engaging and user-friendly dashboard interface.</li>
-        </ul>
-        <p>This dashboard not only provides insights into coffee sales performance but also demonstrates my ability to turn raw data into meaningful and actionable visualizations.</p>
-        <div class="dashboard-container">
-            <iframe 
-                src="https://univarkansaslittlerock-my.sharepoint.com/personal/mnabeelhuss_ualr_edu/_layouts/15/Doc.aspx?sourcedoc={3ba8492e-0151-4991-88e0-ff0b53026127}&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True" 
-                frameborder="0">
-            </iframe>
+    <!-- Main Title -->
+    <h1>Automated Stock Scanner</h1>
+
+    <!-- GIF Section -->
+    <div class="gif-container">
+        <img src="../images/" alt="Webscrapping">
+        <div class="github-link">
+            <a href="https://github.com/nabeelh7/blinkit-dashboard" target="_blank">View Project on GitHub</a>
         </div>
-    </section>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+        <h2>Introduction</h2>
+        <p>
+            This project automates the process of scanning stocks and adding them to TradingView for quick trading decisions during the first 10–15 minutes of market opening. It reduces manual effort by automating tasks such as:
+        </p>
+        <ul>
+            <li>Running multiple scanners simultaneously on Chartink.</li>
+            <li>Sorting stocks by volume and extracting the top performers.</li>
+            <li>Automatically adding selected stocks to TradingView watchlists.</li>
+        </ul>
+
+        <h2>Technologies Used</h2>
+        <ul>
+            <li>Python</li>
+            <li>Selenium</li>
+            <li>Web Scraping</li>
+            <li>TradingView Integration</li>
+        </ul>
+
+        <h2>GitHub Repository</h2>
+        <div class="github-link">
+            <a href="https://github.com/nabeelh7/stock-scanner-automation" target="_blank">View the project on GitHub</a>
+        </div>
+    </div>
 
     <!-- Footer -->
-    <footer>
+    <footer style="text-align: center; padding: 20px; background-color: #000; color: #fff;">
         <p>&copy; 2024 Nabeel Hussain. All Rights Reserved.</p>
     </footer>
+    
 </body>
 </html>

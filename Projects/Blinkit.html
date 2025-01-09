@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blinkit Dashboard: Power BI Analysis</title>
+    <link rel="stylesheet" href="../style.css"> <!-- Reuse your existing theme -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #00fbff;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #00fbff;
+        }
+
+        p, ul {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+
+        .gif-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 40px auto; /* Center and add vertical spacing */
+            padding: 20px; /* Add space inside the container */
+            max-width: 1200px; /* Limit the width */
+            border: 2px solid #00fbff; /* Optional border for styling */
+            border-radius: 10px;
+            background-color: #111; /* Slightly different background for contrast */
+        }
+
+        .gif-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .github-link {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .github-link a {
+            text-decoration: none;
+            color: #00fbff;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .visualization-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 30px 0;
+        }
+
+        .login-warning {
+            text-align: center;
+            color: red;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid #00fbff;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Nabeel Hussain</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../skills.html">Skills</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Title -->
+    <h1>Blinkit Dashboard: Power BI Analysis</h1>
+
+    <!-- GIF Section -->
+    <div class="gif-container">
+        <img src="../images/blinkit.gif" alt="Blinkit Dashboard Demo">
+        <div class="github-link">
+            <a href="https://github.com/nabeelh7/blinkit-dashboard" target="_blank">View Project on GitHub</a>
+        </div>
+    </div>
+
+    <!-- Visualization Section -->
+    <div class="visualization-container">
+        <iframe 
+            title="Blinkit Dashboard" 
+            src="https://app.powerbi.com/reportEmbed?reportId=c6a8f4db-462b-4f46-8574-49189c6fc687&autoAuth=true&ctid=421b8695-aff6-4230-a2fe-e3ddf359a4e2" 
+            frameborder="0" 
+            allowFullScreen="true">
+        </iframe>
+    </div>
+
+    <!-- Login Warning -->
+    <div class="login-warning">You have to login to view the visualization.</div>
+
+    <!-- Content Section -->
+    <div class="content">
+        <h2>Introduction to Blinkit</h2>
+        <p>Blinkit is a leading retail and grocery delivery service that focuses on providing customers with fast and convenient shopping experiences...</p>
+
+        <h2>Business Requirement</h2>
+        <p>The objective of the Blinkit Dashboard was to conduct a comprehensive analysis of Blinkit's operations...</p>
+
+        <h2>Key Objectives</h2>
+        <ul>
+            <li>Analyze sales trends and their impact on customer satisfaction.</li>
+            <li>Explore the correlation between inventory metrics and outlet performance.</li>
+            <li>Provide actionable insights to improve operational efficiency and customer satisfaction.</li>
+        </ul>
+
+        <h2>KPIs Included</h2>
+        <ul>
+            <li>Total Sales: The overall revenue generated from all items sold.</li>
+            <li>Average Sales: The average revenue per sale.</li>
+            <li>Number of Items: The total count of different items sold.</li>
+            <li>Average Rating: The average customer rating for items sold.</li>
+        </ul>
+
+        <h2>Visualizations & Insights</h2>
+        <ul>
+            <li><strong>Total Sales by Fat Content:</strong> Donut Chart.</li>
+            <li><strong>Total Sales by Item Type:</strong> Bar Chart.</li>
+            <li><strong>Fat Content by Outlet for Total Sales:</strong> Stacked Column Chart.</li>
+            <li><strong>Total Sales by Outlet Establishment:</strong> Line Chart.</li>
+            <li><strong>Sales by Outlet Size:</strong> Donut/Pie Chart.</li>
+            <li><strong>Sales by Outlet Location:</strong> Funnel Map.</li>
+            <li><strong>All Metrics by Outlet Type:</strong> Matrix Card.</li>
+        </ul>
+
+        <h2>Technologies Used</h2>
+        <ul>
+            <li>Power BI: For creating the interactive dashboard and visualizations.</li>
+            <li>Data Modeling: To create relationships and calculate KPIs.</li>
+            <li>Data Analysis Expressions (DAX): For deriving insights from complex metrics.</li>
+        </ul>
+
+        <h2>Outcomes</h2>
+        <p>The Blinkit Dashboard serves as a valuable tool for data-driven decision-making. It empowers stakeholders to:
+            <li>Identify sales trends and growth opportunities.</li>
+            <li>Improve inventory distribution across outlets.</li>
+            <li>Tailor strategies to enhance customer satisfaction.</li>
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Nabeel Hussain. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
